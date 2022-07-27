@@ -325,7 +325,7 @@ public class AdminView extends JFrame{
 			});
 		
 		
-		//------------------------------------------------fire employee panel-------------------------------------------
+		//------------------------------------------------fire employee panel-----------------------------------------
 		
 		fire_employee = new JPanel();//fire employee panel
 		fire_employee.setVisible(false);
