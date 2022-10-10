@@ -59,7 +59,7 @@ public class Owner extends Manager {
 		java.sql.Date target = java.sql.Date.valueOf(dStr);
 
 		try {
-			preparedStatement = connect.prepareStatement("INSERT INTO employee VALUES(?,?,?,?,?,?,?,?)");
+			preparedStatement = connect.prepareStatement("insert into employee VALUES(?,?,?,?,?,?,?,?)");
 	    	preparedStatement.setString(1,ssn);
 			preparedStatement.setString(2,fname);
 			preparedStatement.setString(3,lname);
@@ -70,7 +70,7 @@ public class Owner extends Manager {
 			preparedStatement.setString(8, address);
 			preparedStatement.executeUpdate();
 
-			preparedStatement = connect.prepareStatement("INSERT INTO hotelemp VALUES(?,?)");
+			preparedStatement = connect.prepareStatement("insert into hotelemp VALUES(?,?)");
 			preparedStatement.setString(1,hid);
 			preparedStatement.setString(2,ssn);
 			preparedStatement.executeUpdate();
